@@ -61,7 +61,7 @@ func Display(resp http.ResponseWriter, req *http.Request) {
 
 		b, _ := ioutil.ReadAll(res.Body)
 
-		fmt.Println(string(b))
+//		fmt.Println(string(b))
 
 		content = append(content, string(b))
 
@@ -69,7 +69,7 @@ func Display(resp http.ResponseWriter, req *http.Request) {
 
 	}
 
-	fmt.Println("numbr of files retrieved ", counter)
+	//fmt.Println("numbr of files retrieved ", counter)
 
 	fmt.Fprint(resp, content)
 
